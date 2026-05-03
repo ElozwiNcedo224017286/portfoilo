@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>LuxeLocks | 100% Human Hair Wigs & Bundles</title>
+  <!-- Google Fonts for girly & professional vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (Free Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff9fc;
+      font-family: 'Inter', sans-serif;
+      color: #2d2a2e;
+      scroll-behavior: smooth;
+    }
+
+    /* girly, soft palette */
+    :root {
+      --blush: #f9e6f0;
+      --rose: #f3cbd8;
+      --deep-rose: #e4a5bb;
+      --coffee: #5e3a4a;
+      --gold: #c9a87b;
+      --white: #ffffff;
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header / navbar */
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 2px solid var(--rose);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      background: var(--gold);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .brand-name {
+      font-size: 28px;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: #4a2c38;
+      letter-spacing: -0.3px;
+    }
+
+    .tagline {
+      background: var(--rose);
+      padding: 8px 16px;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #4a2c38;
+    }
+
+    .shop-btn-nav {
+      background: var(--coffee);
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .shop-btn-nav:hover {
+      background: #2d1e26;
+      transform: scale(0.97);
+    }
+
+    /* hero */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin: 40px 0 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      color: #3a2530;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin: 16px 0 24px;
+      opacity: 0.8;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      padding: 14px 32px;
+      border: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: var(--shadow-sm);
+      display: inline-block;
+      text-decoration: none;
+      color: #2d2a2e;
+    }
+
+    .btn-primary i {
+      margin-right: 8px;
+    }
+
+    .btn-primary:hover {
+      background: #b88b5a;
+      transform: translateY(-2px);
+    }
+
+    .hero-gallery {
+      flex: 1;
+      display: flex;
+      gap: 12px;
+    }
+
+    .hero-img {
+      width: 48%;
+      border-radius: 24px;
+      background: #f3e0e8;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* section headings */
+    .section-title {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      margin: 48px 0 24px;
+      border-left: 6px solid var(--gold);
+      padding-left: 18px;
+    }
+
+    /* product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      border: 1px solid #f7e4ec;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+    }
+
+    .product-img {
+      width: 100%;
+      aspect-ratio: 1 / 0.9;
+      object-fit: cover;
+      background: #f1e3ea;
+    }
+
+    .product-details {
+      padding: 18px;
+    }
+
+    .product-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .texture {
+      font-size: 0.8rem;
+      color: #a17a8a;
+      margin: 6px 0;
+    }
+
+    .length-price {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    .stock {
+      font-size: 0.75rem;
+      background: #eaf7e6;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 50px;
+      color: #2e6b2f;
+    }
+
+    .stock.out {
+      background: #ffe0e0;
+      color: #bc4e2c;
+    }
+
+    .price {
+      font-weight: 800;
+      color: #b1627a;
+      font-size: 1.2rem;
+    }
+
+    /* price list page (simple table) */
+    .price-table {
+      background: white;
+      border-radius: 28px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+    }
+
+    .price-table h3 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 8px;
+      border-bottom: 1px solid #f1dfe7;
+    }
+
+    th {
+      font-weight: 600;
+      color: #5e3a4a;
+    }
+
+    /* contact + whatsapp row */
+    .contact-row {
+      background: #fdf5f8;
+      border-radius: 32px;
+      padding: 24px 28px;
+      margin: 40px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .payment-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .payment-card {
+      background: white;
+      border-radius: 20px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .upload-area {
+      margin-top: 20px;
+      border: 1px dashed var(--deep-rose);
+      border-radius: 28px;
+      padding: 18px;
+      background: #fff6fa;
+    }
+
+    /* delivery + faq + care grid */
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin: 40px 0;
+    }
+
+    .info-card {
+      flex: 1;
+      background: white;
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #f2dfe8;
+      padding: 12px 0;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 8px;
+      color: #4e3e46;
+      padding-left: 12px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 40px 0 20px;
+    }
+
+    .social-icon {
+      background: var(--rose);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #4a2c38;
+      transition: 0.2s;
+    }
+
+    .social-icon:hover {
+      background: var(--gold);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      color: #a47f8b;
+      border-top: 1px solid var(--rose);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    button, .clickable {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Header + brand + logo + shop now -->
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">LL</div>
+      <span class="brand-name">LuxeLocks</span>
+      <div class="tagline">✨ 100% Human Hair, Wigs & Bundles ✨</div>
+    </div>
+    <button class="shop-btn-nav" id="navShopBtn"><i class="fas fa-shopping-bag"></i> Shop Now</button>
+  </div>
+
+  <!-- Hero with clean pics -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Flawless Crowns, Real Hair</h1>
+      <p>Premium 100% human hair wigs, bundles, closures & frontals — ethically sourced, silky soft.</p>
+      <button class="btn-primary" id="heroShopBtn"><i class="fas fa-arrow-right"></i> Shop Now</button>
+    </div>
+    <div class="hero-gallery">
+      <img class="hero-img" src="https://placehold.co/500x500/FADADD/white?text=Front+View" alt="hair front view">
+      <img class="hero-img" src="https://placehold.co/500x500/F3D7E2/white?text=Installed+Look" alt="installed hair">
+    </div>
+  </div>
+
+  <!-- PRODUCT SECTION (main money-maker) -->
+  <div id="products">
+    <h2 class="section-title"><i class="fas fa-star"></i> Our Signature Collections</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+
+  <!-- PRICE LIST PAGE (clean simple) -->
+  <div id="priceList">
+    <h2 class="section-title"><i class="fas fa-tag"></i> Price List — At a Glance</h2>
+    <div class="price-table">
+      <h3>Hair Prices (USD / ZAR available on request)</h3>
+      <table>
+        <thead>
+          <tr><th>Product Type</th><th>Lengths</th><th>Texture</th><th>Price (USD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bundles (3pcs)</td><td>12",14",16"</td><td>Straight / Body Wave / Curly</td><td>$145 - $210</td></tr>
+          <tr><td>Wigs (Lace Front)</td><td>14"-22"</td><td>Straight, Body Wave, Kinky Curly</td><td>$220 - $390</td></tr>
+          <tr><td>Closures (4x4)</td><td>10"-18"</td><td>Silk/Transparent</td><td>$65 - $110</td></tr>
+          <tr><td>Frontals (13x4)</td><td>12"-20"</td><td>HD Lace, pre-plucked</td><td>$95 - $150</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px; font-size:0.85rem;">💸 Bulk & wholesale discounts available — contact our WhatsApp!</p>
+    </div>
+  </div>
+
+  <!-- Contact & WhatsApp + Payment + Upload -->
+  <div class="contact-row">
+    <div>
+      <h3><i class="fab fa-whatsapp"></i> Chat with us</h3>
+      <a href="https://wa.me/27781234567?text=Hi%20LuxeLocks!%20I%20need%20help%20with%20hair%20shopping" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Click to Chat (WhatsApp)</a>
+      <p style="margin-top:10px;">📞 +27 78 123 4567 (business hours)</p>
+    </div>
+    <div>
+      <i class="fas fa-credit-card"></i> Secure Payments
+    </div>
+  </div>
+
+  <!-- Payment Options: EFT, card, proof upload -->
+  <div style="background:#fffafc; border-radius: 32px; padding: 20px; margin-bottom: 30px;">
+    <h3><i class="fas fa-wallet"></i> Payment Options</h3>
+    <div class="payment-options">
+      <div class="payment-card"><i class="fas fa-university"></i> EFT Details: LuxeLocks, FNB Acc# 628****890</div>
+      <div class="payment-card"><i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> Card (Stripe/Payfast)</div>
+    </div>
+    <div class="upload-area">
+      <label for="proofUpload"><i class="fas fa-upload"></i> Proof of Payment Upload:</label>
+      <input type="file" id="proofUpload" accept="image/*,application/pdf" style="margin: 10px 0 0; display:block;">
+      <small style="color:#b1627a;">Upload your payment slip & we'll confirm within 2hrs.</small>
+    </div>
+  </div>
+
+  <!-- Delivery Information -->
+  <div class="info-grid">
+    <div class="info-card">
+      <i class="fas fa-truck-fast" style="font-size: 28px; color: var(--gold);"></i>
+      <h3>🚚 Delivery & Collection</h3>
+      <p><strong>Hand deliver zones:</strong> Cape Town CBD, Johannesburg (Sandton, Rosebank), Durban North.</p>
+      <p><strong>Delivery costs:</strong> R80 local / R150 nationwide courier. <br> <strong>Timeframes:</strong> 1-3 business days (hand delivery), 2-5 days nationwide.</p>
+      <p><strong>Collection option:</strong> Free pickup at our Cape Town studio (by appointment).</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-question-circle"></i>
+      <h3>✨ FAQ (instant answers)</h3>
+      <div id="faqContainer">
+        <div class="faq-item">
+          <div class="faq-question">How long does delivery take? <span>+</span></div>
+          <div class="faq-answer">Typically 1-3 business days for main metros, up to 5 days for remote areas.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Are the wigs 100% human hair? <span>+</span></div>
+          <div class="faq-answer">Yes, all our hair is ethically sourced, 100% unprocessed human hair.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I return/exchange? <span>+</span></div>
+          <div class="faq-answer">Unworn, sealed hair can be returned within 7 days. Contact support first.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How to check stock availability? <span>+</span></div>
+          <div class="faq-answer">Each product card shows stock status. Contact us to reserve.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hair Care Tips section -->
+  <div class="info-card" style="background: #fdf2f7; margin-bottom: 40px;">
+    <i class="fas fa-leaf" style="font-size: 28px; color: #b88b5a;"></i>
+    <h3>🌸 Hair Care Tips (for lasting luxury)</h3>
+    <ul style="margin-left: 20px; line-height: 1.6;">
+      <li>✨ Use sulfate-free shampoo & cold water rinses to preserve shine.</li>
+      <li>✨ Detangle with a wide-tooth comb starting from ends.</li>
+      <li>✨ Apply argan oil 2x per week to keep strands moisturized.</li>
+      <li>✨ Store wigs on a mannequin or silk bag to maintain shape.</li>
+      <li>✨ Avoid heat above 180°C (356°F) on raw hair textures.</li>
+    </ul>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="social-links">
+    <a href="https://instagram.com/luxelockshair" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <span style="font-weight:500;">@luxelockshair — follow for drops & tutorials</span>
+  </div>
+  <footer>
+    © 2025 LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.
+  </footer>
+</div>
+
+<script>
+  // product dataset (bundles, wigs, closures, frontals)
+  const products = [
+    { id:1, name:"Silky Straight Bundle", category:"bundles", texture:"Straight", lengths:"12/14/16 inch", price:"$145", stock:true, img:"https://placehold.co/500x500/fce4ec/white?text=Straight+Bundle" },
+    { id:2, name:"Body Wave Wig", category:"wigs", texture:"Body Wave", lengths:"18 inch", price:"$279", stock:true, img:"https://placehold.co/500x500/f8e0f0/white?text=Body+Wave+Wig" },
+    { id:3, name:"Kinky Curly Closure", category:"closures", texture:"Curly", lengths:"12 inch", price:"$79", stock:false, img:"https://placehold.co/500x500/f3d9e4/white?text=Closure" },
+    { id:4, name:"HD Lace Frontal", category:"frontals", texture:"Transparent Straight", lengths:"14 inch", price:"$129", stock:true, img:"https://placehold.co/500x500/fae2ef/white?text=Frontal+HD" },
+    { id:5, name:"Deep Curly Bundle Deal", category:"bundles", texture:"Water Curly", lengths:"16/18/20 inch", price:"$199", stock:true, img:"https://placehold.co/500x500/f7deea/white?text=Curly+Bundles" },
+    { id:6, name:"Pre-plucked Lace Wig", category:"wigs", texture:"Body Wave", lengths:"20 inch", price:"$349", stock:true, img:"https://placehold.co/500x500/f3cfdf/white?text=Lace+Wig" }
+  ];
+
+  function renderProducts() {
+    const grid = document.getElementById('productGrid');
+    if(!grid) return;
+    grid.innerHTML = products.map(prod => `
+      <div class="product-card">
+        <img class="product-img" src="${prod.img}" alt="${prod.name}">
+        <div class="product-details">
+          <div class="product-title">${prod.name}</div>
+          <div class="texture"><i class="fas fa-feather-alt"></i> ${prod.texture}</div>
+          <div class="length-price"><span>📏 Lengths: ${prod.lengths}</span><span class="price">${prod.price}</span></div>
+          <div class="${prod.stock ? 'stock' : 'stock out'}">${prod.stock ? '✅ In Stock' : '❌ Low Stock / Pre-order'}</div>
+          <button class="btn-primary" style="margin-top:12px; padding:8px 16px; font-size:0.85rem;" onclick="alert('Item added to cart simulation. Thank you!')"><i class="fas fa-cart-plus"></i> Shop Now</button>
+        </div>
+      </div>
+    `).join('');
+  }
+  renderProducts();
+
+  // simple FAQ toggle (professional + girly)
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const questionDiv = item.querySelector('.faq-question');
+    const answerDiv = item.querySelector('.faq-answer');
+    questionDiv.addEventListener('click', () => {
+      const isVisible = answerDiv.style.display === 'block';
+      answerDiv.style.display = isVisible ? 'none' : 'block';
+      questionDiv.querySelector('span').innerHTML = isVisible ? '+' : '−';
+    });
+    answerDiv.style.display = 'none';
+  });
+
+  // proof of payment upload feedback
+  const uploadInput = document.getElementById('proofUpload');
+  if(uploadInput) {
+    uploadInput.addEventListener('change', function(e) {
+      if(e.target.files.length > 0) {
+        alert(`✨ Proof received: "${e.target.files[0].name}". We'll verify & update you within 2h.`);
+      }
+    });
+  }
+
+  // smooth shop now scroll to products + highlight
+  function scrollToProducts() {
+    const productSection = document.getElementById('products');
+    if(productSection) {
+      productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  const navBtn = document.getElementById('navShopBtn');
+  const heroBtn = document.getElementById('heroShopBtn');
+  if(navBtn) navBtn.addEventListener('click', scrollToProducts);
+  if(heroBtn) heroBtn.addEventListener('click', scrollToProducts);
+
+  // also all product internal shop now buttons already have alert, but we want full visibility
+  // stock availability is already dynamic.
+  // additional: simulate click-to-chat number
+  // also display phone number backup
+  const phoneSpan = document.querySelector('.contact-row p');
+  // no extra action needed
+
+  // add collection note: hand delivery info
+  // also show "collection option" in delivery card already
+  // everything looks professional & girly
+
+  // set current year in footer dynamic if needed
+  const footerYear = document.querySelector('footer');
+  if(footerYear) {
+    footerYear.innerHTML = `© ${new Date().getFullYear()} LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.✨`;
+  }
+</script>
+
+<!-- Extra note: The placeholder images represent clean pictures and installed/front/back varieties; actual brand would replace URLs with real hair photos. -->
+</body>
+</html>
