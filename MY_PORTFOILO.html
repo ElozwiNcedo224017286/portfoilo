@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>LuxeLocks | 100% Human Hair Wigs & Bundles — Prices in Rands</title>
+  <title>LuxeLocks | 100% Human Hair Wigs & Bundles — ZAR Pricing</title>
   <!-- Google Fonts for girly & professional vibe -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <!-- Font Awesome 6 (Free Icons) -->
@@ -53,6 +53,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -297,30 +298,88 @@
       margin-top: 8px;
     }
 
-    /* contact + whatsapp row */
-    .contact-row {
-      background: #fdf5f8;
+    /* contact + whatsapp + instagram row - IMPROVED STYLING */
+    .social-contact-row {
+      background: linear-gradient(135deg, #fdf5f8 0%, #fef8fb 100%);
       border-radius: 32px;
-      padding: 24px 28px;
+      padding: 28px 32px;
       margin: 40px 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      gap: 24px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      border: 1px solid rgba(228, 165, 187, 0.2);
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .whatsapp-btn, .instagram-btn {
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      letter-spacing: 0.3px;
     }
 
     .whatsapp-btn {
       background: #25D366;
       color: white;
-      padding: 12px 24px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      border: none;
     }
 
+    .whatsapp-btn:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    .instagram-btn {
+      background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white;
+      border: none;
+      position: relative;
+    }
+
+    .instagram-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(214, 36, 159, 0.3);
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: rgba(255,255,255,0.7);
+      padding: 12px 24px;
+      border-radius: 60px;
+      backdrop-filter: blur(2px);
+    }
+
+    .contact-details p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .contact-details i {
+      margin-right: 8px;
+      color: var(--gold);
+    }
+
+    /* payment options */
     .payment-options {
       display: flex;
       flex-wrap: wrap;
@@ -382,29 +441,32 @@
       padding-left: 12px;
     }
 
-    .social-links {
+    /* footer social simplified */
+    .social-footer {
       display: flex;
       justify-content: center;
-      gap: 24px;
-      margin: 40px 0 20px;
+      gap: 28px;
+      margin: 30px 0 20px;
     }
 
-    .social-icon {
+    .social-circle {
       background: var(--rose);
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
+      font-size: 26px;
       color: #4a2c38;
-      transition: 0.2s;
+      transition: 0.25s;
+      text-decoration: none;
     }
 
-    .social-icon:hover {
+    .social-circle:hover {
       background: var(--gold);
-      transform: scale(1.05);
+      transform: scale(1.08);
+      color: white;
     }
 
     footer {
@@ -423,10 +485,17 @@
         flex-direction: column;
         gap: 12px;
       }
-    }
-
-    button, .clickable {
-      cursor: pointer;
+      .social-contact-row {
+        flex-direction: column;
+        text-align: center;
+      }
+      .social-buttons {
+        justify-content: center;
+      }
+      .whatsapp-btn, .instagram-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -482,21 +551,26 @@
         </tbody>
       </table>
       <p style="margin-top:16px; font-size:0.85rem; background:#fcf6ef; padding:8px 14px; border-radius:40px; display:inline-block;">
-        <i class="fab fa-whatsapp"></i> 💸 Bulk & wholesale discounts available — contact our WhatsApp for best ZAR pricing!
+        <i class="fab fa-whatsapp"></i> 💸 Bulk & wholesale discounts available — contact our WhatsApp or Instagram for best ZAR pricing!
       </p>
       <div class="zar-note"><i class="fas fa-info-circle"></i> Prices include VAT where applicable. Exchange rate: 1 USD ≈ R 18.50 (indicative)</div>
     </div>
   </div>
 
-  <!-- Contact & WhatsApp -->
-  <div class="contact-row">
-    <div>
-      <h3><i class="fab fa-whatsapp"></i> Chat with us</h3>
-      <a href="https://wa.me/27718114209?text=Hi%20LuxeLocks!%20I%20need%20help%20with%20hair%20shopping%20(ZAR%20pricing)" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Click to Chat (WhatsApp)</a>
-      <p style="margin-top:10px;">📞 +27 71 811 4209 (business hours)</p>
+  <!-- UPDATED: Contact + WhatsApp + Instagram with new email & IG handle -->
+  <div class="social-contact-row">
+    <div class="social-buttons">
+      <a href="https://wa.me/27718114209?text=Hi%20LuxeLocks!%20I%20need%20help%20with%20hair%20shopping%20(ZAR%20pricing)" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+      </a>
+      <a href="https://instagram.com/elozwincedo" class="instagram-btn" target="_blank">
+        <i class="fab fa-instagram fa-lg"></i> Instagram
+      </a>
     </div>
-    <div>
-      <i class="fas fa-credit-card"></i> Secure Payments • Pay in ZAR
+    <div class="contact-details">
+      <p><i class="fas fa-phone-alt"></i> +27 71 811 4209 (business hours)</p>
+      <p><i class="fas fa-envelope"></i> nelozwi@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> @elozwincedo</p>
     </div>
   </div>
 
@@ -529,22 +603,10 @@
       <i class="fas fa-question-circle"></i>
       <h3>✨ FAQ (instant answers)</h3>
       <div id="faqContainer">
-        <div class="faq-item">
-          <div class="faq-question">How long does delivery take? <span>+</span></div>
-          <div class="faq-answer">Typically 1-3 business days for main metros, up to 5 days for remote areas.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Are the wigs 100% human hair? <span>+</span></div>
-          <div class="faq-answer">Yes, all our hair is ethically sourced, 100% unprocessed human hair.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Can I return/exchange? <span>+</span></div>
-          <div class="faq-answer">Unworn, sealed hair can be returned within 7 days. Contact support first.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">How to check stock availability? <span>+</span></div>
-          <div class="faq-answer">Each product card shows stock status. Contact us to reserve.</div>
-        </div>
+        <div class="faq-item"><div class="faq-question">How long does delivery take? <span>+</span></div><div class="faq-answer">Typically 1-3 business days for main metros, up to 5 days for remote areas.</div></div>
+        <div class="faq-item"><div class="faq-question">Are the wigs 100% human hair? <span>+</span></div><div class="faq-answer">Yes, all our hair is ethically sourced, 100% unprocessed human hair.</div></div>
+        <div class="faq-item"><div class="faq-question">Can I return/exchange? <span>+</span></div><div class="faq-answer">Unworn, sealed hair can be returned within 7 days. Contact support first.</div></div>
+        <div class="faq-item"><div class="faq-question">How to check stock availability? <span>+</span></div><div class="faq-answer">Each product card shows stock status. Contact us to reserve.</div></div>
       </div>
     </div>
   </div>
@@ -562,19 +624,20 @@
     </ul>
   </div>
 
-  <!-- Social Media Links -->
-  <div class="social-links">
-    <a href="https://instagram.com/luxelockshair" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <span style="font-weight:500;">@luxelockshair — follow for drops & tutorials (ZAR specials)</span>
+  <!-- Social media footer with updated handles -->
+  <div class="social-footer">
+    <a href="https://wa.me/27718114209" target="_blank" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/elozwincedo" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:nelozwi@gmail.com" target="_blank" class="social-circle"><i class="fas fa-envelope"></i></a>
   </div>
   <footer>
-    © <span id="year"></span> LuxeLocks — 100% Human Hair Wigs & Bundles. All prices in South African Rands (ZAR). ✨
+    © <span id="year"></span> LuxeLocks — 100% Human Hair Wigs & Bundles. All prices in South African Rands (ZAR). ✨<br>
+    📧 nelozwi@gmail.com | 📸 @elozwincedo
   </footer>
 </div>
 
 <script>
-  // PRODUCT DATASET WITH ZAR PRICES (converted realistically)
-  // Using conversion: 1 USD ≈ 18.50 ZAR, rounded for clean display
+  // PRODUCT DATASET WITH ZAR PRICES
   const products = [
     { id:1, name:"Silky Straight Bundle", texture:"Straight", lengths:"12/14/16 inch", priceZAR:"R 2,680", stock:true, img:"straight.webp" },
     { id:2, name:"Body Wave Wig", texture:"Body Wave", lengths:"18 inch", priceZAR:"R 5,160", stock:true, img:"body.webp" },
@@ -595,14 +658,14 @@
           <div class="texture"><i class="fas fa-feather-alt"></i> ${prod.texture}</div>
           <div class="length-price"><span>📏 Lengths: ${prod.lengths}</span><span class="price">${prod.priceZAR}</span></div>
           <div class="${prod.stock ? 'stock' : 'stock out'}">${prod.stock ? '✅ In Stock' : '❌ Low Stock / Pre-order'}</div>
-          <button class="btn-primary" style="margin-top:12px; padding:8px 16px; font-size:0.85rem;" onclick="alert('✨ Added to cart (ZAR pricing). We\\'ll contact you for payment & delivery! ✨')"><i class="fas fa-cart-plus"></i> Shop Now — ZAR</button>
+          <button class="btn-primary" style="margin-top:12px; padding:8px 16px; font-size:0.85rem;" onclick="alert('✨ Added to cart (ZAR pricing). We\\'ll contact you at ${'nelozwi@gmail.com'} for payment & delivery! ✨')"><i class="fas fa-cart-plus"></i> Shop Now — ZAR</button>
         </div>
       </div>
     `).join('');
   }
   renderProducts();
 
-  // FAQ toggle functionality
+  // FAQ toggle
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const questionDiv = item.querySelector('.faq-question');
@@ -617,34 +680,26 @@
     }
   });
 
-  // Proof of payment upload alert
+  // Proof upload
   const uploadInput = document.getElementById('proofUpload');
   if(uploadInput) {
     uploadInput.addEventListener('change', function(e) {
       if(e.target.files.length > 0) {
-        alert(`✨ ZAR payment proof received: "${e.target.files[0].name}". We'll verify & update you within 2 hours.`);
+        alert(`✨ ZAR payment proof received: "${e.target.files[0].name}". We'll verify & update you within 2 hours. Email: nelozwi@gmail.com`);
       }
     });
   }
 
-  // Scroll to products section
+  // Scroll to products
   function scrollToProducts() {
     const productSection = document.getElementById('products');
-    if(productSection) {
-      productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if(productSection) productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  const navBtn = document.getElementById('navShopBtn');
-  const heroBtn = document.getElementById('heroShopBtn');
-  if(navBtn) navBtn.addEventListener('click', scrollToProducts);
-  if(heroBtn) heroBtn.addEventListener('click', scrollToProducts);
+  document.getElementById('navShopBtn')?.addEventListener('click', scrollToProducts);
+  document.getElementById('heroShopBtn')?.addEventListener('click', scrollToProducts);
 
-  // Set current year in footer
-  const yearSpan = document.getElementById('year');
-  if(yearSpan) yearSpan.textContent = new Date().getFullYear();
-
-  // Additional: fallback message for missing local images
-  console.log("LuxeLocks — All prices displayed in South African Rands (ZAR) for local convenience.");
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
