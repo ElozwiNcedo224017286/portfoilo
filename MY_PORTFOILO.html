@@ -423,7 +423,7 @@
     <button class="shop-btn-nav" id="navShopBtn"><i class="fas fa-shopping-bag"></i> Shop Now</button>
   </div>
 
-  <!-- Hero with clean pics -->
+  <!-- Hero with local images from Screenshot 2026-05-03 160641.jpg -->
   <div class="hero">
     <div class="hero-text">
       <h1>Flawless Crowns, Real Hair</h1>
@@ -431,18 +431,18 @@
       <button class="btn-primary" id="heroShopBtn"><i class="fas fa-arrow-right"></i> Shop Now</button>
     </div>
     <div class="hero-gallery">
-      <img class="hero-img" src="https://placehold.co/500x500/FADADD/white?text=Front+View" alt="hair front view">
-      <img class="hero-img" src="https://placehold.co/500x500/F3D7E2/white?text=Installed+Look" alt="installed hair">
+      <img class="hero-img" src="front.webp" alt="hair front view">
+      <img class="hero-img" src="lace.webp" alt="installed hair">
     </div>
   </div>
 
-  <!-- PRODUCT SECTION (main money-maker) -->
+  <!-- PRODUCT SECTION -->
   <div id="products">
     <h2 class="section-title"><i class="fas fa-star"></i> Our Signature Collections</h2>
     <div class="product-grid" id="productGrid"></div>
   </div>
 
-  <!-- PRICE LIST PAGE (clean simple) -->
+  <!-- PRICE LIST PAGE -->
   <div id="priceList">
     <h2 class="section-title"><i class="fas fa-tag"></i> Price List — At a Glance</h2>
     <div class="price-table">
@@ -462,7 +462,7 @@
     </div>
   </div>
 
-  <!-- Contact & WhatsApp + Payment + Upload -->
+  <!-- Contact & WhatsApp -->
   <div class="contact-row">
     <div>
       <h3><i class="fab fa-whatsapp"></i> Chat with us</h3>
@@ -474,7 +474,7 @@
     </div>
   </div>
 
-  <!-- Payment Options: EFT, card, proof upload -->
+  <!-- Payment Options -->
   <div style="background:#fffafc; border-radius: 32px; padding: 20px; margin-bottom: 30px;">
     <h3><i class="fas fa-wallet"></i> Payment Options</h3>
     <div class="payment-options">
@@ -488,7 +488,7 @@
     </div>
   </div>
 
-  <!-- Delivery Information -->
+  <!-- Delivery Info -->
   <div class="info-grid">
     <div class="info-card">
       <i class="fas fa-truck-fast" style="font-size: 28px; color: var(--gold);"></i>
@@ -513,15 +513,11 @@
           <div class="faq-question">Can I return/exchange? <span>+</span></div>
           <div class="faq-answer">Unworn, sealed hair can be returned within 7 days. Contact support first.</div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question">How to check stock availability? <span>+</span></div>
-          <div class="faq-answer">Each product card shows stock status. Contact us to reserve.</div>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- Hair Care Tips section -->
+  <!-- Hair Care Tips -->
   <div class="info-card" style="background: #fdf2f7; margin-bottom: 40px;">
     <i class="fas fa-leaf" style="font-size: 28px; color: #b88b5a;"></i>
     <h3>🌸 Hair Care Tips (for lasting luxury)</h3>
@@ -530,7 +526,7 @@
       <li>✨ Detangle with a wide-tooth comb starting from ends.</li>
       <li>✨ Apply argan oil 2x per week to keep strands moisturized.</li>
       <li>✨ Store wigs on a mannequin or silk bag to maintain shape.</li>
-      <li>✨ Avoid heat above 180°C (356°F) on raw hair textures.</li>
+      <li>✨ Avoid heat above 180°C on raw hair textures.</li>
     </ul>
   </div>
 
@@ -540,19 +536,19 @@
     <span style="font-weight:500;">@luxelockshair — follow for drops & tutorials</span>
   </div>
   <footer>
-    © 2025 LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.
+    © <span id="year"></span> LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.✨
   </footer>
 </div>
 
 <script>
-  // product dataset (bundles, wigs, closures, frontals)
+  // Updated product dataset with local images from your folder
   const products = [
-    { id:1, name:"Silky Straight Bundle", category:"bundles", texture:"Straight", lengths:"12/14/16 inch", price:"$145", stock:true, img:"https://placehold.co/500x500/fce4ec/white?text=Straight+Bundle" },
-    { id:2, name:"Body Wave Wig", category:"wigs", texture:"Body Wave", lengths:"18 inch", price:"$279", stock:true, img:"https://placehold.co/500x500/f8e0f0/white?text=Body+Wave+Wig" },
-    { id:3, name:"Kinky Curly Closure", category:"closures", texture:"Curly", lengths:"12 inch", price:"$79", stock:false, img:"https://placehold.co/500x500/f3d9e4/white?text=Closure" },
-    { id:4, name:"HD Lace Frontal", category:"frontals", texture:"Transparent Straight", lengths:"14 inch", price:"$129", stock:true, img:"https://placehold.co/500x500/fae2ef/white?text=Frontal+HD" },
-    { id:5, name:"Deep Curly Bundle Deal", category:"bundles", texture:"Water Curly", lengths:"16/18/20 inch", price:"$199", stock:true, img:"https://placehold.co/500x500/f7deea/white?text=Curly+Bundles" },
-    { id:6, name:"Pre-plucked Lace Wig", category:"wigs", texture:"Body Wave", lengths:"20 inch", price:"$349", stock:true, img:"https://placehold.co/500x500/f3cfdf/white?text=Lace+Wig" }
+    { id:1, name:"Silky Straight Bundle", category:"bundles", texture:"Straight", lengths:"12/14/16 inch", price:"$145", stock:true, img:"straight.webp" },
+    { id:2, name:"Body Wave Wig", category:"wigs", texture:"Body Wave", lengths:"18 inch", price:"$279", stock:true, img:"body.webp" },
+    { id:3, name:"Kinky Curly Closure", category:"closures", texture:"Curly", lengths:"12 inch", price:"$79", stock:false, img:"curly.webp" },
+    { id:4, name:"HD Lace Frontal", category:"frontals", texture:"Transparent Straight", lengths:"14 inch", price:"$129", stock:true, img:"frontal.webp" },
+    { id:5, name:"Deep Curly Bundle Deal", category:"bundles", texture:"Water Curly", lengths:"16/18/20 inch", price:"$199", stock:true, img:"kinky.webp" },
+    { id:6, name:"Pre-plucked Lace Wig", category:"wigs", texture:"Body Wave", lengths:"20 inch", price:"$349", stock:true, img:"face.webp" }
   ];
 
   function renderProducts() {
@@ -573,7 +569,7 @@
   }
   renderProducts();
 
-  // simple FAQ toggle (professional + girly)
+  // FAQ toggle
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const questionDiv = item.querySelector('.faq-question');
@@ -583,10 +579,9 @@
       answerDiv.style.display = isVisible ? 'none' : 'block';
       questionDiv.querySelector('span').innerHTML = isVisible ? '+' : '−';
     });
-    answerDiv.style.display = 'none';
   });
 
-  // proof of payment upload feedback
+  // Proof of payment alert
   const uploadInput = document.getElementById('proofUpload');
   if(uploadInput) {
     uploadInput.addEventListener('change', function(e) {
@@ -596,36 +591,18 @@
     });
   }
 
-  // smooth shop now scroll to products + highlight
+  // Scroll logic
   function scrollToProducts() {
     const productSection = document.getElementById('products');
     if(productSection) {
       productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  const navBtn = document.getElementById('navShopBtn');
-  const heroBtn = document.getElementById('heroShopBtn');
-  if(navBtn) navBtn.addEventListener('click', scrollToProducts);
-  if(heroBtn) heroBtn.addEventListener('click', scrollToProducts);
+  document.getElementById('navShopBtn').addEventListener('click', scrollToProducts);
+  document.getElementById('heroShopBtn').addEventListener('click', scrollToProducts);
 
-  // also all product internal shop now buttons already have alert, but we want full visibility
-  // stock availability is already dynamic.
-  // additional: simulate click-to-chat number
-  // also display phone number backup
-  const phoneSpan = document.querySelector('.contact-row p');
-  // no extra action needed
-
-  // add collection note: hand delivery info
-  // also show "collection option" in delivery card already
-  // everything looks professional & girly
-
-  // set current year in footer dynamic if needed
-  const footerYear = document.querySelector('footer');
-  if(footerYear) {
-    footerYear.innerHTML = `© ${new Date().getFullYear()} LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.✨`;
-  }
+  // Year update
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
-<!-- Extra note: The placeholder images represent clean pictures and installed/front/back varieties; actual brand would replace URLs with real hair photos. -->
 </body>
 </html>
