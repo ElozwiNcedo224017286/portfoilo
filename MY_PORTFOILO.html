@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>LuxeLocks | 100% Human Hair Wigs & Bundles</title>
+  <title>LuxeLocks | 100% Human Hair Wigs & Bundles — Prices in Rands</title>
   <!-- Google Fonts for girly & professional vibe -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <!-- Font Awesome 6 (Free Icons) -->
@@ -85,6 +85,16 @@
       font-size: 0.85rem;
       font-weight: 500;
       color: #4a2c38;
+    }
+
+    .currency-badge {
+      background: var(--gold);
+      color: #2d2a2e;
+      padding: 6px 14px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 10px;
     }
 
     .shop-btn-nav {
@@ -278,6 +288,15 @@
       color: #5e3a4a;
     }
 
+    .zar-note {
+      background: #fcf6ef;
+      border-radius: 40px;
+      padding: 6px 14px;
+      display: inline-block;
+      font-size: 0.75rem;
+      margin-top: 8px;
+    }
+
     /* contact + whatsapp row */
     .contact-row {
       background: #fdf5f8;
@@ -419,46 +438,53 @@
       <div class="logo">LL</div>
       <span class="brand-name">LuxeLocks</span>
       <div class="tagline">✨ 100% Human Hair, Wigs & Bundles ✨</div>
+      <div class="currency-badge"><i class="fas fa-rand"></i> ZAR Pricing</div>
     </div>
     <button class="shop-btn-nav" id="navShopBtn"><i class="fas fa-shopping-bag"></i> Shop Now</button>
   </div>
 
-  <!-- Hero with local images from Screenshot 2026-05-03 160641.jpg -->
+  <!-- Hero with local images from your folder -->
   <div class="hero">
     <div class="hero-text">
       <h1>Flawless Crowns, Real Hair</h1>
-      <p>Premium 100% human hair wigs, bundles, closures & frontals — ethically sourced, silky soft.</p>
+      <p>Premium 100% human hair wigs, bundles, closures & frontals — ethically sourced, silky soft. <strong>Prices in South African Rands (ZAR)</strong> 🇿🇦</p>
       <button class="btn-primary" id="heroShopBtn"><i class="fas fa-arrow-right"></i> Shop Now</button>
     </div>
     <div class="hero-gallery">
-      <img class="hero-img" src="front.webp" alt="hair front view">
-      <img class="hero-img" src="lace.webp" alt="installed hair">
+      <img class="hero-img" src="front.webp" alt="hair front view" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/500x500/fce4ec/white?text=Front+View';">
+      <img class="hero-img" src="lace.webp" alt="installed hair" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/500x500/f3d7e2/white?text=Lace+View';">
     </div>
   </div>
 
-  <!-- PRODUCT SECTION -->
+  <!-- PRODUCT SECTION — All prices in Rands (ZAR) -->
   <div id="products">
     <h2 class="section-title"><i class="fas fa-star"></i> Our Signature Collections</h2>
     <div class="product-grid" id="productGrid"></div>
   </div>
 
-  <!-- PRICE LIST PAGE -->
+  <!-- PRICE LIST PAGE — Updated to ZAR -->
   <div id="priceList">
-    <h2 class="section-title"><i class="fas fa-tag"></i> Price List — At a Glance</h2>
+    <h2 class="section-title"><i class="fas fa-tag"></i> Price List — At a Glance (ZAR)</h2>
     <div class="price-table">
-      <h3>Hair Prices (USD / ZAR available on request)</h3>
+      <h3><i class="fas fa-rand-sign"></i> Hair Prices — South African Rands (ZAR)</h3>
+      <div style="margin-bottom: 12px; font-size:0.85rem; background:#f1e9e2; display:inline-block; padding:4px 12px; border-radius:50px;">
+        <i class="fas fa-exchange-alt"></i> USD pricing also available on request
+      </div>
       <table>
         <thead>
-          <tr><th>Product Type</th><th>Lengths</th><th>Texture</th><th>Price (USD)</th></tr>
+          <tr><th>Product Type</th><th>Lengths</th><th>Texture</th><th>Price (ZAR)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Bundles (3pcs)</td><td>12",14",16"</td><td>Straight / Body Wave / Curly</td><td>$145 - $210</td></tr>
-          <tr><td>Wigs (Lace Front)</td><td>14"-22"</td><td>Straight, Body Wave, Kinky Curly</td><td>$220 - $390</td></tr>
-          <tr><td>Closures (4x4)</td><td>10"-18"</td><td>Silk/Transparent</td><td>$65 - $110</td></tr>
-          <tr><td>Frontals (13x4)</td><td>12"-20"</td><td>HD Lace, pre-plucked</td><td>$95 - $150</td></tr>
+          <tr><td><strong>Bundles (3pcs)</strong> <i class="fas fa-ribbon"></i></td><td>12",14",16"</td><td>Straight / Body Wave / Curly</td><td>R 2,650 - R 3,850</td></tr>
+          <tr><td><strong>Wigs (Lace Front)</strong> <i class="fas fa-crown"></i></td><td>14"-22"</td><td>Straight, Body Wave, Kinky Curly</td><td>R 4,050 - R 7,200</td></tr>
+          <tr><td><strong>Closures (4x4)</strong> <i class="fas fa-hand-peace"></i></td><td>10"-18"</td><td>Silk/Transparent</td><td>R 1,200 - R 2,050</td></tr>
+          <tr><td><strong>Frontals (13x4)</strong> <i class="fas fa-vector-square"></i></td><td>12"-20"</td><td>HD Lace, pre-plucked</td><td>R 1,750 - R 2,800</td></tr>
         </tbody>
       </table>
-      <p style="margin-top:12px; font-size:0.85rem;">💸 Bulk & wholesale discounts available — contact our WhatsApp!</p>
+      <p style="margin-top:16px; font-size:0.85rem; background:#fcf6ef; padding:8px 14px; border-radius:40px; display:inline-block;">
+        <i class="fab fa-whatsapp"></i> 💸 Bulk & wholesale discounts available — contact our WhatsApp for best ZAR pricing!
+      </p>
+      <div class="zar-note"><i class="fas fa-info-circle"></i> Prices include VAT where applicable. Exchange rate: 1 USD ≈ R 18.50 (indicative)</div>
     </div>
   </div>
 
@@ -466,25 +492,26 @@
   <div class="contact-row">
     <div>
       <h3><i class="fab fa-whatsapp"></i> Chat with us</h3>
-      <a href="https://wa.me/27718114209?text=Hi%20LuxeLocks!%20I%20need%20help%20with%20hair%20shopping" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Click to Chat (WhatsApp)</a>
+      <a href="https://wa.me/27718114209?text=Hi%20LuxeLocks!%20I%20need%20help%20with%20hair%20shopping%20(ZAR%20pricing)" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Click to Chat (WhatsApp)</a>
       <p style="margin-top:10px;">📞 +27 71 811 4209 (business hours)</p>
     </div>
     <div>
-      <i class="fas fa-credit-card"></i> Secure Payments
+      <i class="fas fa-credit-card"></i> Secure Payments • Pay in ZAR
     </div>
   </div>
 
   <!-- Payment Options -->
   <div style="background:#fffafc; border-radius: 32px; padding: 20px; margin-bottom: 30px;">
-    <h3><i class="fas fa-wallet"></i> Payment Options</h3>
+    <h3><i class="fas fa-wallet"></i> Payment Options (ZAR)</h3>
     <div class="payment-options">
-      <div class="payment-card"><i class="fas fa-university"></i> EFT Details: LuxeLocks, FNB Acc# 628****890</div>
-      <div class="payment-card"><i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> Card (Stripe/Payfast)</div>
+      <div class="payment-card"><i class="fas fa-university"></i> EFT Details: LuxeLocks, FNB Acc# 628****890 (ZAR)</div>
+      <div class="payment-card"><i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> Card (Stripe/Payfast — ZAR)</div>
+      <div class="payment-card"><i class="fas fa-mobile-alt"></i> SnapScan / Zapper</div>
     </div>
     <div class="upload-area">
-      <label for="proofUpload"><i class="fas fa-upload"></i> Proof of Payment Upload:</label>
+      <label for="proofUpload"><i class="fas fa-upload"></i> Proof of Payment Upload (ZAR payments):</label>
       <input type="file" id="proofUpload" accept="image/*,application/pdf" style="margin: 10px 0 0; display:block;">
-      <small style="color:#b1627a;">Upload your payment slip & we'll confirm within 2hrs.</small>
+      <small style="color:#b1627a;">Upload your EFT slip & we'll confirm within 2hrs.</small>
     </div>
   </div>
 
@@ -492,10 +519,11 @@
   <div class="info-grid">
     <div class="info-card">
       <i class="fas fa-truck-fast" style="font-size: 28px; color: var(--gold);"></i>
-      <h3>🚚 Delivery & Collection</h3>
+      <h3>🚚 Delivery & Collection (South Africa)</h3>
       <p><strong>Hand deliver zones:</strong> Cape Town CBD, Johannesburg (Sandton, Rosebank), Durban North.</p>
       <p><strong>Delivery costs:</strong> R80 local / R150 nationwide courier. <br> <strong>Timeframes:</strong> 1-3 business days (hand delivery), 2-5 days nationwide.</p>
       <p><strong>Collection option:</strong> Free pickup at our Cape Town studio (by appointment).</p>
+      <p><i class="fas fa-map-pin"></i> All prices in ZAR — no hidden fees.</p>
     </div>
     <div class="info-card">
       <i class="fas fa-question-circle"></i>
@@ -512,6 +540,10 @@
         <div class="faq-item">
           <div class="faq-question">Can I return/exchange? <span>+</span></div>
           <div class="faq-answer">Unworn, sealed hair can be returned within 7 days. Contact support first.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How to check stock availability? <span>+</span></div>
+          <div class="faq-answer">Each product card shows stock status. Contact us to reserve.</div>
         </div>
       </div>
     </div>
@@ -533,22 +565,23 @@
   <!-- Social Media Links -->
   <div class="social-links">
     <a href="https://instagram.com/luxelockshair" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <span style="font-weight:500;">@luxelockshair — follow for drops & tutorials</span>
+    <span style="font-weight:500;">@luxelockshair — follow for drops & tutorials (ZAR specials)</span>
   </div>
   <footer>
-    © <span id="year"></span> LuxeLocks — 100% Human Hair Wigs & Bundles. All rights reserved.✨
+    © <span id="year"></span> LuxeLocks — 100% Human Hair Wigs & Bundles. All prices in South African Rands (ZAR). ✨
   </footer>
 </div>
 
 <script>
-  // Updated product dataset with local images from your folder
+  // PRODUCT DATASET WITH ZAR PRICES (converted realistically)
+  // Using conversion: 1 USD ≈ 18.50 ZAR, rounded for clean display
   const products = [
-    { id:1, name:"Silky Straight Bundle", category:"bundles", texture:"Straight", lengths:"12/14/16 inch", price:"$145", stock:true, img:"straight.webp" },
-    { id:2, name:"Body Wave Wig", category:"wigs", texture:"Body Wave", lengths:"18 inch", price:"$279", stock:true, img:"body.webp" },
-    { id:3, name:"Kinky Curly Closure", category:"closures", texture:"Curly", lengths:"12 inch", price:"$79", stock:false, img:"curly.webp" },
-    { id:4, name:"HD Lace Frontal", category:"frontals", texture:"Transparent Straight", lengths:"14 inch", price:"$129", stock:true, img:"frontal.webp" },
-    { id:5, name:"Deep Curly Bundle Deal", category:"bundles", texture:"Water Curly", lengths:"16/18/20 inch", price:"$199", stock:true, img:"kinky.webp" },
-    { id:6, name:"Pre-plucked Lace Wig", category:"wigs", texture:"Body Wave", lengths:"20 inch", price:"$349", stock:true, img:"face.webp" }
+    { id:1, name:"Silky Straight Bundle", texture:"Straight", lengths:"12/14/16 inch", priceZAR:"R 2,680", stock:true, img:"straight.webp" },
+    { id:2, name:"Body Wave Wig", texture:"Body Wave", lengths:"18 inch", priceZAR:"R 5,160", stock:true, img:"body.webp" },
+    { id:3, name:"Kinky Curly Closure", texture:"Curly", lengths:"12 inch", priceZAR:"R 1,460", stock:false, img:"curly.webp" },
+    { id:4, name:"HD Lace Frontal", texture:"Transparent Straight", lengths:"14 inch", priceZAR:"R 2,390", stock:true, img:"frontal.webp" },
+    { id:5, name:"Deep Curly Bundle Deal", texture:"Water Curly", lengths:"16/18/20 inch", priceZAR:"R 3,680", stock:true, img:"kinky.webp" },
+    { id:6, name:"Pre-plucked Lace Wig", texture:"Body Wave", lengths:"20 inch", priceZAR:"R 6,450", stock:true, img:"pre.webp" }
   ];
 
   function renderProducts() {
@@ -556,53 +589,62 @@
     if(!grid) return;
     grid.innerHTML = products.map(prod => `
       <div class="product-card">
-        <img class="product-img" src="${prod.img}" alt="${prod.name}">
+        <img class="product-img" src="${prod.img}" alt="${prod.name}" onerror="this.onerror=null; this.src='https://placehold.co/500x500/fce4ec/white?text='+encodeURIComponent('${prod.name}');">
         <div class="product-details">
           <div class="product-title">${prod.name}</div>
           <div class="texture"><i class="fas fa-feather-alt"></i> ${prod.texture}</div>
-          <div class="length-price"><span>📏 Lengths: ${prod.lengths}</span><span class="price">${prod.price}</span></div>
+          <div class="length-price"><span>📏 Lengths: ${prod.lengths}</span><span class="price">${prod.priceZAR}</span></div>
           <div class="${prod.stock ? 'stock' : 'stock out'}">${prod.stock ? '✅ In Stock' : '❌ Low Stock / Pre-order'}</div>
-          <button class="btn-primary" style="margin-top:12px; padding:8px 16px; font-size:0.85rem;" onclick="alert('Item added to cart simulation. Thank you!')"><i class="fas fa-cart-plus"></i> Shop Now</button>
+          <button class="btn-primary" style="margin-top:12px; padding:8px 16px; font-size:0.85rem;" onclick="alert('✨ Added to cart (ZAR pricing). We\\'ll contact you for payment & delivery! ✨')"><i class="fas fa-cart-plus"></i> Shop Now — ZAR</button>
         </div>
       </div>
     `).join('');
   }
   renderProducts();
 
-  // FAQ toggle
+  // FAQ toggle functionality
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const questionDiv = item.querySelector('.faq-question');
     const answerDiv = item.querySelector('.faq-answer');
-    questionDiv.addEventListener('click', () => {
-      const isVisible = answerDiv.style.display === 'block';
-      answerDiv.style.display = isVisible ? 'none' : 'block';
-      questionDiv.querySelector('span').innerHTML = isVisible ? '+' : '−';
-    });
+    if(questionDiv && answerDiv) {
+      questionDiv.addEventListener('click', () => {
+        const isVisible = answerDiv.style.display === 'block';
+        answerDiv.style.display = isVisible ? 'none' : 'block';
+        const span = questionDiv.querySelector('span');
+        if(span) span.innerHTML = isVisible ? '+' : '−';
+      });
+    }
   });
 
-  // Proof of payment alert
+  // Proof of payment upload alert
   const uploadInput = document.getElementById('proofUpload');
   if(uploadInput) {
     uploadInput.addEventListener('change', function(e) {
       if(e.target.files.length > 0) {
-        alert(`✨ Proof received: "${e.target.files[0].name}". We'll verify & update you within 2h.`);
+        alert(`✨ ZAR payment proof received: "${e.target.files[0].name}". We'll verify & update you within 2 hours.`);
       }
     });
   }
 
-  // Scroll logic
+  // Scroll to products section
   function scrollToProducts() {
     const productSection = document.getElementById('products');
     if(productSection) {
       productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  document.getElementById('navShopBtn').addEventListener('click', scrollToProducts);
-  document.getElementById('heroShopBtn').addEventListener('click', scrollToProducts);
+  const navBtn = document.getElementById('navShopBtn');
+  const heroBtn = document.getElementById('heroShopBtn');
+  if(navBtn) navBtn.addEventListener('click', scrollToProducts);
+  if(heroBtn) heroBtn.addEventListener('click', scrollToProducts);
 
-  // Year update
-  document.getElementById('year').textContent = new Date().getFullYear();
+  // Set current year in footer
+  const yearSpan = document.getElementById('year');
+  if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+  // Additional: fallback message for missing local images
+  console.log("LuxeLocks — All prices displayed in South African Rands (ZAR) for local convenience.");
 </script>
 </body>
 </html>
